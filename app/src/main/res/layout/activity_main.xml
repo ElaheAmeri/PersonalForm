@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTexeFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Full Name"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="UserName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="228dp" />
+
+        <EditText
+            android:id="@+id/editTextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <EditText
+            android:id="@+id/editTextReTypepassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:ems="10"
+            android:hint="Re-Type Password"
+            android:inputType="numberPassword"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="430dp" />
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:textSize="25dp"
+            android:text="Gender" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="24dp">
+            <RadioButton
+                android:id="@+id/radioBtnFmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fmail"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/radioBtnMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:textSize="20dp"/>
+
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Register"
+            app:cornerRadius="40dp"
+            android:backgroundTint="#F10A5B"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="520dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editTextFullNameShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/editTextUsernameShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextEmailShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextPasswordShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextGenderShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:visibility="gone"
+                android:layout_margin="24dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/shape" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonShowInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Show Info"
+            app:cornerRadius="40dp"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="612dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="40dp"
+            android:layout_margin="24dp"
+            android:textAllCaps="false"
+            android:backgroundTint="#CA2B90"
+            android:text="Hide Info" />
+    </LinearLayout>
+</ScrollView>
